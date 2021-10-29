@@ -1,0 +1,238 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 19px;
+}
+.font-lr {
+  font-size: 23px;
+}
+.font-lg {
+  font-size: 36px;
+}
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+.flex {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.difference{
+  // @extend .pb-lg;
+  // padding-bottom:150px !important;
+
+  &__comment{
+    justify-content:space-between;
+  }
+  &__item{
+    flex-basis: 47%;
+  }
+  &__detail{
+    justify-content:space-between;
+  }
+  &__subitem{
+    flex-basis:28%;
+  }
+  &__img{
+    // display:block;
+    width:100%;
+    height:auto;
+    // margin:0 auto;
+  }
+  &__subimg{
+    // display:block;
+    width:100%;
+    height:auto;
+    // margin:0 auto;
+  }
+}
+
+// .disassembly{
+//   @extend .pb-lg;
+//   padding-bottom:150px !important;
+// }
+
+.menu{
+  // @extend .pb-lg;
+  // padding-bottom:150px !important;
+
+  &__inner{
+    justify-content:space-between;
+  }
+  &__item{
+    flex-basis:32%;
+  }
+  &__item{
+    // display:flex;
+    // display: flex;
+    flex-direction: column;
+    // flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    padding: 10px;
+  }
+  &__cource{
+    display:block;
+    flex-basis:100%;
+    &--name{
+      font-size:20px;
+    }
+    &--description{
+      font-size:14px;
+    }
+  }
+  &__img{
+    flex-basis:100%;
+  }
+
+}
+.company{
+  // @extend .pb-lg;
+  // padding-bottom:150px !important;
+
+  &__days{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+  }
+  &__date{
+    flex-basis:10%;
+  }
+  &__time{
+    flex-basis:90%;
+  }
+}
+
+// .news{
+//   @extend .pb-lg;
+//   padding-bottom: 100px !important;
+// }
+
+.reservation{
+  // @extend .pb-lg;
+  padding-bottom: 150px !important;
+
+  &__btn {
+    padding:50px 0;
+
+  }
+}
+
+.footer{
+  & .logo {
+    font-size: 30px;
+  }
+  &__li{
+    justify-content: flex-start;
+  }
+}
+
+// .popular {
+//   &__item {
+//     flex-basis: 25%;
+//   }
+
+//   &__img {
+//     height: 335px;
+//   }
+// }
+
+// .travel {
+//   &__img {
+//     height: 400px;
+//   }
+
+//   &__description {
+//     margin-bottom: 40px;
+//   }
+//   &__title {
+//     &::before {
+//       display: block;
+//     }
+//   }
+// }
+
+// .footer {
+//   &__li {
+//     justify-content: flex-start;
+//   }
+// }
+
+.header {
+  &__nav {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  &__ul{
+    display: none;
+  }
+  &__btn {
+      display: none;
+  }
+}
+// 今回追加
+.hero{
+  // @extend .pb-lg;
+  padding-bottom:150px !important;
+
+  &__title{
+    font-size: 50px;
+  }
+  &__tel{
+    font-size: 30px;
+  }
+  &__subtitle{
+    font-size: 40px;
+  }
+  &__caution{
+    font-size: 25px;
+  }
+}
+// ここまで
+
+// .swiper-slide {
+//   box-shadow: 0 8px 40px -10px rgba(0, 0, 0, 0.8);
+// }
+
+// head-branch
+.topginza{
+  padding-bottom:100px !important;
+  &__comment{
+    justify-content:space-between;
+  }
+  &__item{
+    flex-basis: 49%;
+  }
+  &__img{
+    width:100%;
+    height:auto;
+  }
+  &__cheff{
+    margin:0 auto;
+    width:50%;
+    padding-bottom: 0px;
+  }
+  &__material{
+    padding-top: 30px;
+  }
+}
+.infoginza{
+  // @extend .pb-lg;
+  padding-bottom:100px !important;
+}
+.accessginza{
+  // @extend .pb-lg;
+  padding-bottom:100px !important;
+}

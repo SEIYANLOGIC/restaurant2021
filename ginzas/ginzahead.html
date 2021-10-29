@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ginzahead</title>
+  <meta name="description" content="This site is a example site.">
+  <link rel="icon" href="../images/favicon.png">
+  <!-- <link rel="stylesheet" href="styles/loader.css">
+  <script src="scripts/vendors/pace.js"></script> -->
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+  <!-- faのlink -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../styles/vendors/bootstrap-reboot.css" />
+  <!-- <link rel="stylesheet" href="styles/vendors/swiper.min.css" /> -->
+  <!-- jQuery読み込み -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../styles/style.css" />
+  <!-- 確認のスタイル -->
+
+</head>
+<body>
+  <div id="global-container">
+    <div id="container">
+      <div class="mobile-menu__cover"></div>
+      <div class="nav-trigger"></div>
+      <div id="content">
+        <div id="main-content">
+          <main>
+            <section class="topginza">
+              <div>
+                <h2 class="topginza__title main-title">
+                  店名　銀座本店
+                </h2>
+              </div>
+              <div class="topginza__inner">
+                <div class="topginza__comment">
+                  <div class="topginza__item">
+                    <div class="topginza__cheff"><img class="topginza__img" src="../images/fig10.png" alt=""></div>
+                    <div class="topginza__sub sub-title">料理長：　一番　六三郎</div>
+                  </div>
+                  <div class="topginza__item"><img class="topginza__material topginza__img" src="../images/fig11.jpg" alt=""></div>
+                </div>
+              </div>
+            </section>
+            <section class="infoginza">
+              <div>
+                <h2 class="main-title">
+                  銀座本店情報
+                </h2>
+              </div>
+              <div class="infoginza__description">
+                <p>住所：中央区銀座2丁目＠＠＠ビル６F</p>
+                <p>Tel:03-@@@@-@@@@</p>
+              </div>
+              <div class="infoginza__schedule">
+                <div class="sub-title">営業時間：全店共通</div>
+                <div class="infoginza__days"><p class="infoginza__date">平日：</p><p class="infoginza__time">昼の部11:30～14:30(LO 14:00)、夜の部17:00～22:00(LO 21:30)</p></div>
+                <div class="infoginza__days"><p class="infoginza__date">土曜日：</p><p class="infoginza__time">昼の部11:30～14:30(LO 14:00)、夜の部17:00～21:00(LO 20:30)</p></div>
+                <div class="infoginza__days"><p class="infoginza__date">定休日：</p><p class="infoginza__time">日曜日、祝祭日</p></div>
+              </div>
+            </section>
+            <section class="accessginza">
+              <div class="accessginza__title">
+                <h2 class="main-title">
+                  アクセス
+                </h2>
+              </div>
+              <div class="accessginza__inner">
+                <div class="accessginza__item"><img class="accessginza__img" src="../images/fig12.jpg" alt=""></div>
+                <div class="accessginza__place"><p class="accessginza__station">最寄り駅：</p><p class="accessginza__time">地下鉄銀座駅から5分、有楽町駅から7分</p></div>
+              </div>
+            </section>
+
+            <section id="reservation" class="reservation">
+              <div class="reservation__title">
+                <h2 class="main-title">
+                  ご予約
+                </h2>
+              </div>
+              <div class="reservation__inner">
+                <div class="reservation__subtitle">
+                  お名前、ご連絡先などをご予約フォーマットにご記入ください。
+                </div>
+                <!-- <div class="reservation__btn"><button class="btn">ご予約はこちらから</button></div> -->
+                <div class="modal-btn  reservation__btn">
+                  <button id="modalOpen" class="button reservation__button">ご予約はこちらから</button>
+                </div>
+                <p>ご不明な点は、email-adress :＊＊＊＊.＊＊＊@gmail.com　へご質問ください。</p>
+              </div>
+              <div id="easyModal" class="modal">
+                <div class="modal__content">
+                  <div class="modal__header">
+                      <h1>Emailでのご予約</h1>
+                      <span class="modalClose">×</span>
+                  </div>
+                  <p>注意！！　ダミーのお店でホームページを開設しています。<br>実在のお店ではありませんのでご注意ください！</p>
+                  <div class="modal__body modal-contact">
+                    <form action="">
+                      <table class="modal-contact__table">
+                        <tr>
+                          <th class="modal-contact__item">ご予約のお店</th>
+                          <td class="modal-contact__body">
+                            <select name="お店" class="modal-contact__formselect">
+                              <option>選択ください</option>
+                              <option>銀座本店</option>
+                              <option>六本木支店</option>
+                              <option>赤坂支店</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="modal-contact__item">ご来店日<br><span class="modal-contact__holiday">日曜・祝祭日を除く</span></th>
+                          <td class="modal-contact__body">
+                            <input type="text" name="日付" class="modal-contact__formtext" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="modal-contact__item">ご来店の時間</th>
+                          <td class="modal-contact__body">
+                            <select name="お店" class="modal-contact__formselect">
+                              <option>選択ください</option>
+                              <option>18:00</option>
+                              <option>18:30</option>
+                              <option>19:00</option>
+                              <option>19:30</option>
+                              <option>20:00</option>
+                              <option>20:30</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="modal-contact__item">ご来店の人数</th>
+                          <td class="modal-contact__body">
+                            <select name="人数" class="modal-contact__formselect">
+                              <option>選択ください</option>
+                              <option>１名</option>
+                              <option>２名</option>
+                              <option>３名</option>
+                              <option>４名</option>
+                              <option>５名</option>
+                              <option>６名</option>
+                              <option>７名以上</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="modal-contact__item">代表者のお名前</th>
+                          <td class="modal-contact__body">
+                            <input type="text" name="名前" class="modal-contact__formtext" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="modal-contact__item">代表者のお電話番号</th>
+                          <td class="modal-contact__body">
+                            <input type="tel" name="電話" class="modal-contact__formtext" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="modal-contact__item">代表者のメールアドレス</th>
+                          <td class="modal-contact__body">
+                            <input type="email" name="メール" class="modal-contact__formtext" />
+                          </td>
+                        </tr>
+                        <tr>
+                          <th class="modal-contact__item">お問い合わせ内容</th>
+                          <td class="modal-contact__body">
+                            <textarea name="問い合わせ" class="modal-contact__formtextarea"></textarea>
+                          </td>
+                        </tr>
+                      </table>
+                      <input class="modal-contact__submit" type="submit" value="送信ください" />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </main>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="logo">
+          <img src="../images/logo.png" alt="" class="logo__img">
+          <span class="logo__shopname">お寿司屋さん</span>
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__ul">
+            <li class="footer__li"><a href="../index.html">ホーム</a></li>
+            <li class="footer__li"><a href="#reservation">ご予約</a></li>
+          </ul>
+          <div class="footer__copyright">@sushi-restaurant</div>
+        </nav>
+        <div class="footer__close">ご来店をお待ちしております！</div>
+      </footer>
+    </div>
+  </div>
+  <!-- <script src="scripts/vendors/swiper.min.js"></script>
+  <script src="scripts/vendors/TweenMax.min.js"></script>
+  <script src="scripts/vendors/scroll-polyfill.js"></script>
+  <script src="scripts/libs/scroll.js"></script>
+  <script src="scripts/libs/text-animation.js"></script>
+  <script src="scripts/libs/hero-slider.js"></script>
+  <script src="scripts/libs/mobile-menu.js"></script>
+  <script src="scripts/main.js"></script> -->
+  <script src="../scripts/script.js"></script>
+</body>
+</html>
